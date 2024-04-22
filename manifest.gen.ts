@@ -2,21 +2,27 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$$$$0 from "./sections/Hero.tsx";
-import * as $$$$$$1 from "./sections/Theme.tsx";
-import * as $$$$$$2 from "./sections/Footer.tsx";
-import * as $$$$$$3 from "./sections/SimpleTextList.tsx";
-import * as $$$$$$4 from "./sections/ParagraphList.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$$$$0 from "./sections/Carousel.tsx";
+import * as $$$$$$1 from "./sections/Footer.tsx";
+import * as $$$$$$2 from "./sections/GridImages.tsx";
+import * as $$$$$$3 from "./sections/ImageWithParagraph.tsx";
+import * as $$$$$$4 from "./sections/Logos.tsx";
+import * as $$$$$$5 from "./sections/Menu.tsx";
+import * as $$$$$$6 from "./sections/SocialIcons.tsx";
+import * as $$$$$$7 from "./sections/Theme.tsx";
 
 const manifest = {
   "sections": {
-    "deco-sites/startpaulo/sections/Footer.tsx": $$$$$$2,
-    "deco-sites/startpaulo/sections/Hero.tsx": $$$$$$0,
-    "deco-sites/startpaulo/sections/ParagraphList.tsx": $$$$$$4,
-    "deco-sites/startpaulo/sections/SimpleTextList.tsx": $$$$$$3,
-    "deco-sites/startpaulo/sections/Theme.tsx": $$$$$$1,
+    "deco-sites/startpaulo/sections/Carousel.tsx": $$$$$$0,
+    "deco-sites/startpaulo/sections/Footer.tsx": $$$$$$1,
+    "deco-sites/startpaulo/sections/GridImages.tsx": $$$$$$2,
+    "deco-sites/startpaulo/sections/ImageWithParagraph.tsx": $$$$$$3,
+    "deco-sites/startpaulo/sections/Logos.tsx": $$$$$$4,
+    "deco-sites/startpaulo/sections/Menu.tsx": $$$$$$5,
+    "deco-sites/startpaulo/sections/SocialIcons.tsx": $$$$$$6,
+    "deco-sites/startpaulo/sections/Theme.tsx": $$$$$$7,
   },
   "apps": {
     "deco-sites/startpaulo/apps/decohub.ts": $$$$$$$$$$$0,

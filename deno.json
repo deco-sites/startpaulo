@@ -1,19 +1,21 @@
 {
   "imports": {
     "deco-sites/startpaulopaulo/": "./",
-
     "$store/": "./",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.45.0/",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.19.2/",
-    "$fresh/": "https://denopkg.com/denoland/fresh@7ad4610e3a42aba42638cbc1041b96ee58a9b29e/",
-    "preact": "https://esm.sh/preact@10.15.1",
-    "preact/": "https://esm.sh/preact@10.15.1/",
+    "deco/": "https://denopkg.com/deco-cx/deco@1.61.4/",
+    "apps/": "https://denopkg.com/deco-cx/apps@0.36.13/",
+    "$fresh/": "https://deno.land/x/fresh@1.6.8/",
+    "preact": "https://esm.sh/preact@10.19.6",
+    "preact/": "https://esm.sh/preact@10.19.6/",
     "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.2.1",
-    "@preact/signals": "https://esm.sh/*@preact/signals@1.1.3",
-    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.2.3",
+    "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
+    "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
-    "daisyui": "npm:daisyui@3.9.2"
+    "daisyui": "npm:daisyui@3.9.2",
+    "twind": "https://esm.sh/v96/twind@0.16.17",
+    "twind/": "https://esm.sh/v96/twind@0.16.17/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@0.1.4/"
   },
   "tasks": {
     "start": "deno task bundle && deno run -A --unstable --watch=tailwind.css,sections/,functions/,loaders/,actions/,workflows/,accounts/,.env dev.ts",
@@ -37,7 +39,8 @@
     "node_modules",
     "static/",
     "README.md",
-    "_fresh"
+    "_fresh",
+    "**/_fresh/*"
   ],
   "lint": {
     "rules": {
@@ -50,6 +53,7 @@
   "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "experimentalDecorators": true
   }
 }
