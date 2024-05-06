@@ -23,7 +23,7 @@ export default function Logos({
   logos = IMG_PLACEHODLER,
 }: Props) {
   const slideContent = (
-    <div class="flex items-center xl:gap-20 lg:gap-10 md:gap-5 sm:gap-2">
+    <div class="flex items-center lg:flex-row xg:flex-row sm:flex-col xl:gap-20 lg:gap-10 md:gap-5 sm:gap-2">
       {logos?.map((logo) => {
         return (
           <Image
@@ -41,7 +41,7 @@ export default function Logos({
       <div class="flex flex-col gap-12">
         <p class="text-center text-lg">{title}</p>
         <div class=" flex justify-center relative h-[7rem]">
-          <div class="animate-sliding overflow-x-scroll absolute flex flex-nowrap">
+          <div class="animate-sliding overflow-x-hidden absolute flex flex-nowrap">
             {slideContent}
           </div>
         </div>

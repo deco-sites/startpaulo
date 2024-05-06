@@ -1,6 +1,6 @@
 import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-
+import Button from "$store/components/ui/Button.tsx";
 type Type = "dark" | "light";
 
 export interface CTA {
@@ -66,7 +66,7 @@ export default function Haader({
   },
 }: Nav) {
   return (
-    <nav class="container mx-auto lg:px-0 px-4">
+    <nav class=" mx-auto lg:px-0 px-4 bg-primary">
       <div class="flex gap-8 mx-10 items-center justify-between py-4">
         <a href="/">
           <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
@@ -88,8 +88,14 @@ export default function Haader({
               <ul class="flex flex-col gap-8">
                 {navigation?.links.map((link) => (
                   <li>
-                    <a href={link.url} aria-label={link.label}>
-                      {link.label}
+                    <a
+                      class="text-primary"
+                      href={link.url}
+                      aria-label={link.label}
+                    >
+                      <Button class="h-12 w-12 hover:bg-opacity-50 hover:bg-[#fff] hover:text-[#fff] hover:border-[#fff]">
+                        {link.label}
+                      </Button>
                     </a>
                   </li>
                 ))}
@@ -120,7 +126,7 @@ export default function Haader({
                 <a
                   href={link.url}
                   aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
+                  class="link no-underline hover:underline p-4 text-[#fff]"
                 >
                   {link.label}
                 </a>
@@ -134,7 +140,7 @@ export default function Haader({
                 id={item?.id}
                 href={item?.href}
                 target={item?.href.includes("http") ? "_blank" : "_self"}
-                class={`font-normal btn btn-primary ${
+                class={`font-normal border-2 bg-[#cb5929] text-[#fff] border- ${
                   item.outline && "btn-outline"
                 }`}
               >

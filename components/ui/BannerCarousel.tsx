@@ -146,7 +146,7 @@ function Controls() {
     <>
       <div class="flex items-center justify-center z-10 col-start-1 row-start-2">
         <Button
-          class="h-12 w-12"
+          class="h-12 w-12 hover:bg-opacity-50 hover:bg-[#fff] hover:text-[#fff] hover:border-[#fff]"
           variant="icon"
           data-slide="prev"
           aria-label="Previous item"
@@ -161,7 +161,7 @@ function Controls() {
       </div>
       <div class="flex items-center justify-center z-10 col-start-3 row-start-2">
         <Button
-          class="h-12 w-12"
+          class="h-12 w-12 hover:bg-opacity-50 hover:bg-[#fff] hover:text-[#fff] hover:border-[#fff]"
           variant="icon"
           data-slide="next"
           aria-label="Next item"
